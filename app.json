@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "game-recipes-app",
-    "slug": "game-recipes-app",
-    "version": "1.0.0",
+    "name": "Game Guide App",
+    "slug": "GameAppSlug",
+    "version": "0.0.01 beta",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splashscreen.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
