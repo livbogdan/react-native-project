@@ -1,9 +1,11 @@
 import React from "react";
 import { Image, ImageBackground, Text, View } from "react-native";
+
 import Button from "../../components/Button";
 import styles from "./styles";
 
 const Splash = ({navigation}) => {
+
     return(
 
     <ImageBackground style={styles.background} source={require("../../../assets/splashscreen.png")}>

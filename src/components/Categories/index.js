@@ -12,6 +12,7 @@ const Categories = ({ categories, selectedCategory, onCategoryPress }) => {
             style={{ marginHorizontal: -24, marginTop: 24 }}
             renderItem={({ item, index }) => {
                 const selected = selectedCategory === item;
+                const displayName = item?.replace("_", " ")
 
                 return (
                     <TouchableOpacity
@@ -20,7 +21,7 @@ const Categories = ({ categories, selectedCategory, onCategoryPress }) => {
                                 selected ? styles.selectedItemContainer : {}, 
                                 index === 0 ? { marginLeft: 24 } : {}]}
                     >
-                        <Text style={[styles.item, selected ? styles.selectedItem : {}]}>{item}</Text>
+                        <Text style={[styles.item, selected ? styles.selectedItem : {}]}>{displayName}</Text>
                     </TouchableOpacity>
                 );
             }}

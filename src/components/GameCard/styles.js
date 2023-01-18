@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from "react-native";
 import colors from "../../constants/colors";
 
-const {width} =Dimensions.get("window");
+const {width} = Dimensions.get("window");
 
 const styles = StyleSheet.create({
     container:
@@ -9,7 +9,10 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         backgroundColor: colors.secondary,
         padding: 10,
-        width: width * 0.6,
+        width: width * 0.8,
+        marginTop: 56,
+        marginBottom: 32,
+        marginRight: 20,
         //iOS
         shadowColor: "#000",
         shadowOffset: {width: 0, height: 7},
@@ -20,9 +23,10 @@ const styles = StyleSheet.create({
     },
     title:
     {
-        fontSize: 15,
+        fontSize: 20,
         color: colors.text,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        flex: 1
     },
     row:
     {
@@ -32,7 +36,7 @@ const styles = StyleSheet.create({
     footerText:
     {
         color: colors.text,
-        fontSize: 11
+        fontSize: 15
     },
     authorImage:
     {
@@ -46,6 +50,28 @@ const styles = StyleSheet.create({
         width: 15,
         height: 15,
         marginRight: 8
+    },
+    image:
+    {
+        width: 100,
+        height: 150,
+        borderRadius: 10,
+        marginTop: -40,
+        marginLeft: 60,
+                //iOS
+        shadowColor: "#000",
+        shadowOffset: {width: 0, height: 7},
+        shadowOpacity: 0.41,
+        shadowRadius: 9.11,
+        //Android
+        elevation: 14,
+    },
+    footer:
+    {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between", 
+        marginTop: 8
     }
 })
 

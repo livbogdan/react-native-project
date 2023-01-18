@@ -3,6 +3,7 @@ import colors from "../../constants/colors";
 
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: colors.primary,
         paddingHorizontal: 24,
     },
     list: {

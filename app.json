@@ -6,6 +6,9 @@
     "orientation": "portrait",
     "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
+    "jsEngine": "hermes",
+    "ios": {
+      "jsEngine": "jsc"},
     "splash": {
       "image": "./assets/splashscreen.png",
       "resizeMode": "contain",
@@ -28,6 +31,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    
   }
 }
