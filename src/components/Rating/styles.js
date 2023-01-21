@@ -1,14 +1,11 @@
 import { StyleSheet } from 'react-native';
-import colors from '../../constants/colors';
 
 const styles = StyleSheet.create({
-    row: 
-    {
-        flexDirection: "row",
-        alignItems: "center",
+    row: {
+        flexDirection: 'row',
+        alignItems: 'center',
     },
-    star: 
-    {
+    star: {
         width: 12,
         height: 12,
         margin: 2,

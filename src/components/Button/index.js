@@ -6,7 +6,7 @@ const Button = ({ onPress, children }) => {
     return (
         <TouchableOpacity onPress={onPress} style={styles.container}>
             <Text style={styles.text}>{children}</Text>
-            <Image style={styles.icon} source={require("../../../assets/arrow.png")} />
+            <Image style={styles.icon} source={require('../../../assets/arrow.png')} />
         </TouchableOpacity>
     )
 }

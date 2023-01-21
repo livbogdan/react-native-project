@@ -15,27 +15,26 @@ const styles = StyleSheet.create({
         paddingVertical: 60,
     },
     logo: {
-        width: 128,
-        height: 128,
+        width: 80,
+        height: 80,
         alignSelf: 'center',
         marginBottom: 14,
     },
     title: {
-        color: colors.text,
+        color: colors.white,
         fontSize: 18,
         textAlign: 'center',
-        fontWeight: '500',
-        
+        fontWeight: '500'
     },
     bigTitle: {
         fontSize: 50,
-        color: colors.text,
+        color: colors.white,
         paddingHorizontal: 30,
         textAlign: 'center',
         fontWeight: 'bold',
     },
     subtitle: {
-        color: colors.text,
+        color: colors.white,
         textAlign: 'center',
         fontSize: 16,
         marginBottom: 64,

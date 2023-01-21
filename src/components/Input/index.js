@@ -1,30 +1,20 @@
 import React from "react";
 import { Image, Pressable, TextInput, View } from "react-native";
-
 import styles from "./styles";
 import colors from "../../constants/colors";
 
-const Input = ({ showSearchIcon, placeholder, pressable, onPress, style }) => {
-
+const Input = ({ showSearchIcon, pressable, onPress, style, ...props }) => {
     const renderInput = () => (
         <View style={[styles.container, style]}>
             {showSearchIcon ? (
-                <Image 
-                    style={styles.icon} 
-                    source={require("../../../assets/search-icon.png")}
-                    />
-            ): null}
-
-            <TextInput 
-                        editable={!pressable}
-                        placeholderTextColor={colors.lightGrey}  
-                        style={styles.text} 
-                        placeholder={placeholder}
-                        />
+                <Image style={styles.icon} source={require("../../../assets/search-icon.png")} />
+            ) : null}
+            <TextInput {...props} editable={!pressable} placeholderTextColor={colors.lightGrey} style={styles.input}/>
         </View>
     )
 
-    if(pressable) {
+
+    if (pressable) {
         return (
             <Pressable onPress={onPress}>
                 {renderInput()}
@@ -32,11 +22,11 @@ const Input = ({ showSearchIcon, placeholder, pressable, onPress, style }) => {
         )
     }
 
-    return renderInput ()
+    return renderInput()
 }
 
 Input.defaultProps = {
-    placeholder: "Search game",
+    placeholder: 'Search recipe',
     showSearchIcon: true,
 }
 

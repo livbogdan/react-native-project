@@ -1,20 +1,19 @@
-import React from "react";
-import { Image, Text, View } from "react-native";
+import React from 'react';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
+import styles from './styles';
 
-import styles from "./styles";
-
-const Card = ({title, image, serving, style}) => {
+const Card = ({ title, style, image, servings, onPress }) => {
     return (
-        <View style={[styles.container, style]}>
-            <Image style={styles.image} source={{ uri: image}} />
-                 <Text numberOfLines={3} style={styles.title}>{title}</Text>
-                {serving ? (
-                    <>
-                        <Text style={styles.label}>Serving</Text>
-                        <Text style={styles.value}>{serving}</Text>                  
-                    </> 
-                    ) : null}
-        </View>
+        <TouchableOpacity onPress={onPress} style={[styles.container, style]}>
+            <Image style={styles.image} source={{ uri: image }} />
+            <Text numberOfLines={3} style={styles.title}>{title}</Text>
+            {servings ? (
+                <>
+                    <Text style={styles.label}>Servings</Text>
+                    <Text style={styles.value}>{servings}</Text>
+                </>
+            ) : null}
+        </TouchableOpacity>
     );
 };
 

@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "Game Guide App",
-    "slug": "GameAppSlug",
+    "name": " Guide App",
+    "slug": "GuideAppSlug",
     "version": "0.0.01 beta",
     "orientation": "portrait",
-    "icon": "./assets/logo.png",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "jsEngine": "hermes",
     "ios": {
       "jsEngine": "jsc"},
     "splash": {
-      "image": "./assets/splashscreen.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

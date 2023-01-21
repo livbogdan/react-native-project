@@ -1,37 +1,34 @@
-import React from "react";
-import { Image, View } from "react-native";
+import React from 'react';
+import { View, Image } from 'react-native';
+import styles from './styles';
 
-import styles from "./styles";
-
-
-const Rating =({rating}) => {
+const Rating = ({ rating }) => {
     const arr = [1,2,3,4,5]
-    //0-1.4 = 1 Star
-    //1.5-2.4 = 2 Star
-    //2.5-3.4 = 3 Star
-    //3.5-4.4 = 4 Star
-    //4.5-5 = 5 Star
+    // 0-1.4 = 1 star
+    // 1.5-2.4 = 2 star
+    // 2.5-3.4 = 3 star
+    // 3.5-4.4 = 4 star
+    // 4.5-5 = 5 star
 
-    const renderStar = () => {
+    const renderStars = () => {
         return arr?.map(star => {
             if (Math.round(rating) >= star) {
                 return (
-                    <Image key={star} style={styles.star} source={require("../../../assets/StarFilled.png")} />
+                    <Image key={star} style={styles.star} source={require('../../../assets/StarFilled.png')} />
                 )
             }
 
             return (
-                <Image key={star} style={styles.star} source={require("../../../assets/StarEmpty.png")}/>
+                <Image key={star} style={styles.star} source={require('../../../assets/StarFilled.png')} />
             )
         })
     }
 
     return (
         <View style={styles.row}>
-            {renderStar()}
+            {renderStars()}
         </View>
-    )
-
+    );
 };
 
 export default React.memo(Rating);
