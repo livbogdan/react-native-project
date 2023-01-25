@@ -9,6 +9,7 @@ const Splash = ({ navigation }) => {
             <View style={styles.container}>
                 <Image style={styles.logo} source={require('../../../assets/logo.png')} />
                 <Text style={styles.title}>100K+ Premium Recipe</Text>
+                <Text style={styles.title}>For Rookies</Text>
             </View>
 
             <View style={styles.container}>
@@ -16,7 +17,7 @@ const Splash = ({ navigation }) => {
                 <Text style={styles.bigTitle}>Cooking</Text>
                 <Text style={styles.subtitle}>Simple way to find Tasty Recipe</Text>
 
-                <Button onPress={() => navigation.navigate('Home')}>Start Cooking</Button>
+                <Button onPress={() => navigation.navigate('Home')}>Find Recipes</Button>
             </View>
         </ImageBackground>
     )

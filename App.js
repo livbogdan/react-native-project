@@ -21,11 +21,12 @@ const BackButton = (props) => {
   )
 }
 
+//My own Theme in Application
 const theme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: '#f50808',
+    background: '#d9a3e0',
   },
 }
 

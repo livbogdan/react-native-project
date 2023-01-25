@@ -73,6 +73,9 @@ const Home = ({ navigation }) => {
             <Categories categories={tags} selectedCategory={selectedTag} onCategoryPress={setSelectedTag} />
 
 
+            <Title text= "All Recipes"/>
+
+
             <FlatList
                 horizontal
                 data={filteredRecipes}
