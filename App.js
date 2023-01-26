@@ -1,5 +1,5 @@
-import 'react-native-gesture-handler';
 import React, { useEffect, useState } from 'react';
+import 'react-native-gesture-handler';
 import { Image, Pressable, StyleSheet } from 'react-native';
 import Splash from './src/screens/Splash';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';

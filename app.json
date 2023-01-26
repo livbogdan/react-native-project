@@ -21,9 +21,11 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.livbogdan.Guide.App",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.livbogdan.Guide.App",
       "adaptiveIcon": {
         "foregroundImage": "./assets/splash.png",
         "backgroundColor": "#FFFFFF"
