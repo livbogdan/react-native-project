@@ -13,6 +13,7 @@ const Home = ({ navigation }) => {
     const [tags, setTags] = useState([])
     const [selectedTag, setSelectedTag] = useState()
     const [filteredRecipes, setFilteredRecipes] = useState(recipes)
+    
     const { healthyRecipes } = useContext(HealthyRecipesContext);
     const { recipes } = useContext(RecipesContext);
 
@@ -58,7 +59,7 @@ const Home = ({ navigation }) => {
                     <RecipeCard
                         style={index === 0 ? { marginLeft: 24 } : {}}
                         onPress={() => navigation.navigate('RecipeDetails', { item })}
-                        title={item?.name}
+                        title={item?.name}  
                         time={item?.cook_time_minutes}
                         image={item?.thumbnail_url}
                         rating={item?.user_ratings?.score}
@@ -69,7 +70,7 @@ const Home = ({ navigation }) => {
                 )}
             />
 
-
+            
             <Categories categories={tags} selectedCategory={selectedTag} onCategoryPress={setSelectedTag} />
 
 

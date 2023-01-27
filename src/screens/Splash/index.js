@@ -1,9 +1,10 @@
 import React from "react";
 import { Image, ImageBackground, Text, View } from "react-native";
+
 import Button from "../../components/Button";
 import styles from "./styles";
 
-const Splash = ({ navigation }) => {
+const Splash = ({ navigation }) => { // Navigate to main scrreen 
     return (
         <ImageBackground style={styles.background} source={require('../../../assets/splash.png')}>
             <View style={styles.container}>
@@ -17,7 +18,8 @@ const Splash = ({ navigation }) => {
                 <Text style={styles.bigTitle}>Cooking</Text>
                 <Text style={styles.subtitle}>Simple way to find Tasty Recipe</Text>
 
-                <Button onPress={() => navigation.navigate('Home')}>Find Recipes</Button>
+                
+                <Button onPress={() => navigation.navigate('Home')}>Find Recipes</Button> 
             </View>
         </ImageBackground>
     )
