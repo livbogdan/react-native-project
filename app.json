@@ -11,8 +11,8 @@
       "jsEngine": "jsc"},
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#6C4AB6"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

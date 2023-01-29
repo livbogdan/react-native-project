@@ -26,19 +26,19 @@ const RecipeDetails = ({ route }) => {
                     </View> 
                 ))}
 
-                <Title style={{ marginTop: 32, marginBottom: 16 }} text="Instructions" />  
+                    <Title style={{ marginTop: 32, marginBottom: 16 }} text="Instructions" />  
 
-                {instructions?.map((instruction, index) => (
-                    <View key={instruction?.id} style={styles.instructionRow}>
-                        <Text style={styles.index}>{index + 1}</Text> 
-                        <Text style={styles.instructionText}>{instruction?.display_text}</Text>
-                    </View>
-                ))}
+                    {instructions?.map((instruction, index) => (
+                        <View key={instruction?.id} style={styles.instructionRow}>
+                            <Text style={styles.index}>{index + 1}</Text> 
+                            <Text style={styles.instructionText}>{instruction?.display_text}</Text>
+                        </View>
+                    ))}
 
                 
-                {!instructions?.length ? (                                      // If instruction non available.
-                    <Text style={styles.value}>No instructions found.</Text> 
-                ) : null} 
+                    {!instructions?.length ? (                                      // If instruction non available.
+                        <Text style={styles.value}>No instructions found.</Text> 
+                    ) : null} 
 
             </ScrollView>
         </SafeAreaView>

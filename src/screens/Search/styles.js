@@ -3,8 +3,9 @@ import colors from "../../constants/colors";
 
 const styles = StyleSheet.create({
     container: {
-        paddingHorizontal: 24,
-        flex: 1,    
+        //paddingHorizontal: 24,
+        marginHorizontal: 24,
+        flex: 2,    
     },
 })
 

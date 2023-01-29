@@ -6,7 +6,7 @@ const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
     container: {
         borderRadius: 12,
-        backgroundColor: 'rgba(217,217,217,0.5)',
+        backgroundColor: colors.secondary,
         padding: 10,
         width: width * 0.4,
         marginVertical: 32,
@@ -15,20 +15,21 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 14,
-        color: colors.grey,
+        color: colors.text,
         fontWeight: 'bold',
         textAlign: 'center',
         marginVertical: 16,
     },
     label: {
-        color: colors.lightGrey2,
-        fontSize: 11,
+        color: colors.text,
+        fontSize: 12,
         marginTop: 8,
         marginBottom: 4,
+        fontWeight: 'bold'
     },
     value: {
-        color: colors.grey,
-        fontSize: 11,
+        color: colors.text,
+        fontSize: 10,
         fontWeight: 'bold',
     },
     image: {

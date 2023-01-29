@@ -9,7 +9,7 @@ const Card = ({ title, style, image, servings, onPress }) => {
             <Text numberOfLines={3} style={styles.title}>{title}</Text>
             {servings ? (
                 <>
-                    <Text style={styles.label}>Servings</Text>
+                    <Text style={styles.label}>Servings:</Text>
                     <Text style={styles.value}>{servings}</Text>
                 </>
             ) : null}

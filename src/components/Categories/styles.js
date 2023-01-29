@@ -4,21 +4,21 @@ import colors from '../../constants/colors';
 const styles = StyleSheet.create({
     item: {
         fontSize: 12,
-        color: colors.green,
+        color: colors.third,
         fontWeight: 'bold',
         padding: 8,
         paddingHorizontal: 12,
         textTransform: 'capitalize',
     },
     selectedItem: {
-        color: colors.white
+        color: colors.text
     },
     itemContainer: {
         marginRight: 8,
         marginBottom: 14,
     },
     selectedItemContainer: {
-        backgroundColor: colors.green,
+        backgroundColor: colors.third,
         borderRadius: 10,
     }
 });

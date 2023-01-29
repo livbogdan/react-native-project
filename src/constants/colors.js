@@ -1,10 +1,8 @@
 const colors = {
-    green: '#03010a',
-    white: '#FFFFFF',
-    black: '#000000',
-    lightGrey: '#d80085',
-    lightGrey2: '#006aff',
-    grey: '#484848',
-    grey2: '#797979',
+    primary: '#6C4AB6',
+    secondary: '#8D72E1',
+    third: '#8D9EFF',
+    text: '#B9E0FF',
+    //text: '#000000',
 }
 export default colors;

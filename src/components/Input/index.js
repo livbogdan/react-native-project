@@ -9,7 +9,7 @@ const Input = ({ showSearchIcon, pressable, onPress, style, ...props }) => {
             {showSearchIcon ? (
                 <Image style={styles.icon} source={require("../../../assets/search-icon.png")} />
             ) : null}
-            <TextInput {...props} editable={!pressable} placeholderTextColor={colors.lightGrey} style={styles.input}/>
+            <TextInput {...props} editable={!pressable} placeholderTextColor={colors.text} style={styles.input}/>
         </View>
     )
 

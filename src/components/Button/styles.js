@@ -3,7 +3,7 @@ import colors from "../../constants/colors";
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: colors.green,
+        backgroundColor: colors.third,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         padding: 15,
     },
     text: {
-        color: colors.white,
+        color: colors.text,
         fontSize: 16,
         fontWeight: '500'
     },

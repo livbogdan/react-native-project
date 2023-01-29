@@ -9,26 +9,24 @@ import Splash from './src/screens/Splash';
 import Search from './src/screens/Search';
 import Home from './src/screens/Home';
 import RecipeDetails from './src/screens/RecipeDetails';
+import colors from './src/constants/colors';
 
-const Stack = createStackNavigator(); 
 export const RecipesContext = React.createContext();
 export const HealthyRecipesContext = React.createContext();
 
-// Back Button with Image
-const BackButton = (props) => {
+const Stack = createStackNavigator(); 
+const BackButton = (props) => { // Back Button with Image
   return (
     <Pressable onPress={props.onPress}>
       <Image style={styles.back} source={require('./assets/arrowleft.png')} /> 
     </Pressable>
   )
 }
-
-//My own Theme in Application
-const theme = {
+const theme = { //My own Theme in Application
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: '#d9a3e0',
+    background: colors.primary,
   },
 }
 

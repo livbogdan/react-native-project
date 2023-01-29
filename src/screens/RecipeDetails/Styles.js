@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: 'rgba(217,217,217,0.5)',
+        backgroundColor: colors.secondary,
         borderRadius: 8,
         paddingHorizontal: 12,
         paddingVertical: 10,
@@ -24,12 +24,12 @@ const styles = StyleSheet.create({
     },
     key: {
         fontSize: 12,
-        color: colors.black,
+        color: colors.text,
         textTransform: 'capitalize',
     },
     value: {
         fontSize: 12,
-        color: colors.lightGrey2,
+        color: colors.text,
     },
     instructionRow: {
         flexDirection: 'row',
@@ -38,14 +38,19 @@ const styles = StyleSheet.create({
     },
     index: {
         fontSize: 20,
-        color: colors.grey2,
+        color: colors.text,
         marginRight: 16,
     },
     instructionText: {
         fontSize: 14,
-        color: colors.black,
+        color: colors.text,
         flex: 1,
     },
+    view: {
+        
+        color: colors.secondary,
+    },
+
 })
 
 export default styles;
