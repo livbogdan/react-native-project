@@ -15,30 +15,40 @@ const RecipeDetails = ({ route }) => {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
-
+                
+                <Title style={styles.title} text={item?.name} />
                 <Image style={styles.image} source={{ uri: item?.thumbnail_url }} />
-                <Title style={{marginBottom: 32}} text={item?.name} />
+                <Title style={styles.title} text= "Nutrition"/>
+                <View>
+                    {nutritionKeys?.map(key => (
+                        <View key={key} style={styles.row}>
+                            <Text style={styles.key}>{key}</Text>
+                            <Text style={styles.value}>{nutrition[key]}</Text>
+                        </View> 
+                    ))}
 
-                {nutritionKeys?.map(key => (
-                    <View key={key} style={styles.row}>
-                        <Text style={styles.key}>{key}</Text>
-                        <Text style={styles.value}>{nutrition[key]}</Text>
-                    </View> 
-                ))}
+                    {!nutritionKeys?.length ? ( //If Nutrition not available
+                        <Text style={styles.nonFounded}>NOT FOUND.</Text> 
+                    ): null}
 
-                    <Title style={{ marginTop: 32, marginBottom: 16 }} text="Instructions" />  
+                </View>
 
-                    {instructions?.map((instruction, index) => (
+                        
+
+                <Title style={styles.title} text="Instruction" />  
+                <View style={styles.instruction}>
+                        {instructions?.map((instruction) => (
                         <View key={instruction?.id} style={styles.instructionRow}>
-                            <Text style={styles.index}>{index + 1}</Text> 
                             <Text style={styles.instructionText}>{instruction?.display_text}</Text>
                         </View>
                     ))}
 
                 
-                    {!instructions?.length ? (                                      // If instruction non available.
-                        <Text style={styles.value}>No instructions found.</Text> 
+                    {!instructions?.length ? ( // If instruction non available.
+                        <Text style={styles.nonFounded}>NOT FOUND.</Text> 
                     ) : null} 
+                </View>
+
 
             </ScrollView>
         </SafeAreaView>

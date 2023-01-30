@@ -3,16 +3,23 @@ import colors from "../../constants/colors";
 
 const styles = StyleSheet.create({
     container: {
-        marginHorizontal: 24,
-        flex: 1,
+        marginHorizontal: 40,
+        flex: 2,
+        //paddingBottom: 16
     },
     image: {
-        width: '100%',
-        height: 180,
-        borderRadius: 10,
+        width: "100%",
+        height: 190,
+        borderRadius: 20,
+        borderWidth: 3,
+        borderColor: "black",       
         marginBottom: 12,
+        marginTop: 30,
+        elevation: 5
+
     },
     row: {
+
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -21,11 +28,16 @@ const styles = StyleSheet.create({
         paddingHorizontal: 12,
         paddingVertical: 10,
         marginVertical: 4,
+        borderWidth: 3,
+        borderColor: "black",
+
+        elevation: 5,
+        
     },
     key: {
-        fontSize: 12,
+        fontSize: 15,
         color: colors.text,
-        textTransform: 'capitalize',
+        //textTransform: 'capitalize',
     },
     value: {
         fontSize: 12,
@@ -34,22 +46,46 @@ const styles = StyleSheet.create({
     instructionRow: {
         flexDirection: 'row',
         alignItems: 'center',
-        marginVertical: 12,
-    },
-    index: {
-        fontSize: 20,
-        color: colors.text,
-        marginRight: 16,
+        marginVertical: 20,
+        
     },
     instructionText: {
-        fontSize: 14,
+        fontSize: 16,
         color: colors.text,
         flex: 1,
+        textAlign: "center",
+        marginHorizontal: 20,
     },
-    view: {
-        
-        color: colors.secondary,
+    instruction:
+    {
+        width: "100%",
+
+        marginTop: 15, 
+        marginBottom: 16, 
+        textAlign: "center",
+        backgroundColor: "white",
+        borderWidth: 3,
+        borderRadius:15,
+        elevation: 5,
     },
+    title:
+    {
+        fontSize: 32,
+        width: "100%",
+        marginTop: 20, 
+        marginBottom: 6, 
+        textAlign: "center",
+    },
+    nonFounded:
+    {
+        height: 50,
+        fontSize: 30,
+        textAlign: "center",
+        backgroundColor: "white",
+        borderWidth: 3,
+        borderRadius:15,
+        elevation: 5,
+    }
 
 })
 

@@ -57,11 +57,11 @@ export default function App() {
     <HealthyRecipesContext.Provider value={{ healthyRecipes, setHealthyRecipes }}>
       <RecipesContext.Provider value={{ recipes, setRecipes }}>
         <NavigationContainer theme={theme}>
-          <Stack.Navigator screenOptions={{ headerTitleAlign: 'center', headerShadowVisible: false }}>
+          <Stack.Navigator screenOptions={{ headerTitleAlign: 'center', headerShadowVisible: true }}>
             <Stack.Screen name="Splash" component={Splash} options={{ headerShown: false }} /> 
             <Stack.Screen name="Home" component={Home} options={{ headerLeft: null, gestureEnabled: false }} />  
             <Stack.Screen name="Search" component={Search} options={{ headerLeft: (props) => <BackButton {...props} /> }} />
-            <Stack.Screen name="RecipeDetails" component={RecipeDetails} options={{ headerLeft: (props) => <BackButton {...props} />, title: "" }} />
+            <Stack.Screen name="RecipeDetails" component={RecipeDetails} options={{ headerLeft: (props) => <BackButton {...props} />, title: "Recipe" }} />
           </Stack.Navigator>
         </NavigationContainer>
       </RecipesContext.Provider>
