@@ -8,7 +8,7 @@ import styles from "./styles";
 const Button = ({ onPress, children }) => {
     return (
         <TouchableOpacity onPress={onPress} style={styles.container}>
-            <Text style={styles.text}>{children}</Text>
+            <Text style={styles.text}>FIND RECIPES</Text>
             <Image style={styles.icon} source={require('../../../assets/arrow.png')} />  
         </TouchableOpacity>
     )

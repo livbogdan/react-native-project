@@ -11,8 +11,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     container: {
-        paddingHorizontal: 20,
+        paddingHorizontal: 25,
         paddingVertical: 75,
+        borderRadius: 5,
         
     },
     logo: {
@@ -20,10 +21,11 @@ const styles = StyleSheet.create({
         height: 80,
         alignSelf: 'center',
         marginBottom: 14,
-        backgroundColor: colors.primary,
+        backgroundColor: 'white',
         borderRadius: 20,
     },
     title: {
+        backgroundColor: 'white',
         color: colors.secondary,
         fontSize: 18,
         textAlign: 'center',
@@ -31,6 +33,7 @@ const styles = StyleSheet.create({
     },
     bigTitle: {
         fontSize: 50,
+        backgroundColor: 'white',
         color: colors.primary,
         paddingHorizontal: 20,
         textAlign: 'center',
@@ -53,13 +56,14 @@ const styles = StyleSheet.create({
 
     },
     subtitle: {
+        backgroundColor: 'white',
         color: colors.primary,
         textAlign: 'center',
         fontSize: 17,
         fontWeight: 'bold',
         marginBottom: 64,
         marginTop: 15,
-        borderRadius: 5,
+        
         //iOS Shadow
         shadowColor: "#000",
         shadowOffset: {

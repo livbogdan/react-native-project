@@ -2,24 +2,23 @@ import { StyleSheet } from "react-native";
 import colors from "../../constants/colors";
 
 const styles = StyleSheet.create({
-    container: {
+    container: 
+    {
         marginHorizontal: 40,
         flex: 2,
-        //paddingBottom: 16
     },
-    image: {
+    image: 
+    {
         width: "100%",
         height: 190,
         borderRadius: 20,
-        borderWidth: 3,
-        borderColor: "black",       
+        borderWidth: 8,
+        borderColor: colors.secondary,       
         marginBottom: 12,
         marginTop: 30,
-        elevation: 5
-
     },
-    row: {
-
+    row: 
+    {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -30,23 +29,25 @@ const styles = StyleSheet.create({
         marginVertical: 4,
         borderWidth: 3,
         borderColor: "black",
-
-        elevation: 5,
         
     },
-    key: {
+    key: 
+    {
         fontSize: 15,
         color: colors.text,
-        //textTransform: 'capitalize',
     },
-    value: {
+    value: 
+    {
         fontSize: 12,
         color: colors.text,
     },
-    instructionRow: {
+    instructionRow: 
+    {
         flexDirection: 'row',
         alignItems: 'center',
         marginVertical: 20,
+        
+
         
     },
     instructionText: {
@@ -59,14 +60,12 @@ const styles = StyleSheet.create({
     instruction:
     {
         width: "100%",
-
         marginTop: 15, 
         marginBottom: 16, 
         textAlign: "center",
         backgroundColor: "white",
         borderWidth: 3,
         borderRadius:15,
-        elevation: 5,
     },
     title:
     {
@@ -81,10 +80,6 @@ const styles = StyleSheet.create({
         height: 50,
         fontSize: 30,
         textAlign: "center",
-        backgroundColor: "white",
-        borderWidth: 3,
-        borderRadius:15,
-        elevation: 5,
     }
 
 })

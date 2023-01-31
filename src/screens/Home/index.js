@@ -44,15 +44,15 @@ const Home = ({ navigation }) => {
     }, [selectedTag, recipes])
 
     return (
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={styles.container} >
             <Input pressable onPress={() => navigation.navigate('Search')} />
 
-            <Title text="Healthy Recipes" />
+            <Title style={{color: 'white'}} text="Healthy Recipes" />
 
             <FlatList 
                 horizontal
                 data={healthyRecipes} 
-                style={{ marginHorizontal: -24 }}
+                style={styles.recipeCard}
                 keyExtractor={item => String(item?.id)}
                 showsHorizontalScrollIndicator={false}
                 renderItem={({ item, index }) => (
@@ -79,8 +79,9 @@ const Home = ({ navigation }) => {
 
             <FlatList
                 horizontal
+                vertical
                 data={filteredRecipes}
-                style={{ marginHorizontal: -24 }}
+                style={styles.card}
                 keyExtractor={item => String(item?.id)}
                 showsHorizontalScrollIndicator={false}
                 renderItem={({ item, index }) => (

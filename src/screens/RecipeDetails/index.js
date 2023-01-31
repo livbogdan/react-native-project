@@ -14,8 +14,7 @@ const RecipeDetails = ({ route }) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <ScrollView>
-                
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <Title style={styles.title} text={item?.name} />
                 <Image style={styles.image} source={{ uri: item?.thumbnail_url }} />
                 <Title style={styles.title} text= "Nutrition"/>
@@ -28,13 +27,10 @@ const RecipeDetails = ({ route }) => {
                     ))}
 
                     {!nutritionKeys?.length ? ( //If Nutrition not available
-                        <Text style={styles.nonFounded}>NOT FOUND.</Text> 
+                        <Text style={styles.row}>NOT FOUND.</Text> 
                     ): null}
 
                 </View>
-
-                        
-
                 <Title style={styles.title} text="Instruction" />  
                 <View style={styles.instruction}>
                         {instructions?.map((instruction) => (
@@ -45,11 +41,9 @@ const RecipeDetails = ({ route }) => {
 
                 
                     {!instructions?.length ? ( // If instruction non available.
-                        <Text style={styles.nonFounded}>NOT FOUND.</Text> 
+                        <Text style={styles.row}>NOT FOUND.</Text> 
                     ) : null} 
                 </View>
-
-
             </ScrollView>
         </SafeAreaView>
 

@@ -12,13 +12,16 @@ const styles = StyleSheet.create({
     },
     text: {
         color: colors.text,
-        fontSize: 16,
-        fontWeight: '500'
+        fontSize: 35,
+        fontWeight: '500',
+        marginRight: 20,
+        textAlign: 'center'
+        
     },
     icon: {
-        width: 24,
-        height: 24,
-        marginLeft: 16,
+        width: 40,
+        height: 40,
+        marginLeft: 10,
     }
 })
 
