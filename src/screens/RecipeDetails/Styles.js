@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         marginVertical: 4,
         borderWidth: 3,
-        borderColor: "black",
+        borderColor: colors.borderColor,
         
     },
     key: 
@@ -45,10 +45,7 @@ const styles = StyleSheet.create({
     {
         flexDirection: 'row',
         alignItems: 'center',
-        marginVertical: 20,
-        
-
-        
+        marginVertical: 20,      
     },
     instructionText: {
         fontSize: 16,
@@ -63,7 +60,7 @@ const styles = StyleSheet.create({
         marginTop: 15, 
         marginBottom: 16, 
         textAlign: "center",
-        backgroundColor: "white",
+        backgroundColor: colors.third,
         borderWidth: 3,
         borderRadius:15,
     },

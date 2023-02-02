@@ -21,11 +21,11 @@ const styles = StyleSheet.create({
         height: 80,
         alignSelf: 'center',
         marginBottom: 14,
-        backgroundColor: 'white',
+        backgroundColor: colors.secondary,
         borderRadius: 20,
     },
     title: {
-        backgroundColor: 'white',
+        backgroundColor: colors.secondary,
         color: colors.secondary,
         fontSize: 18,
         textAlign: 'center',
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     },
     bigTitle: {
         fontSize: 50,
-        backgroundColor: 'white',
+        backgroundColor: colors.secondary,
         color: colors.primary,
         paddingHorizontal: 20,
         textAlign: 'center',
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
 
     },
     subtitle: {
-        backgroundColor: 'white',
+        backgroundColor: colors.secondary,
         color: colors.primary,
         textAlign: 'center',
         fontSize: 17,

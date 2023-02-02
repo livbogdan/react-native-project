@@ -13,7 +13,6 @@ const Input = ({ showSearchIcon, pressable, onPress, style, ...props }) => {
         </View>
     )
 
-
     if (pressable) {
         return (
             <Pressable onPress={onPress}>
