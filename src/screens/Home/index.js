@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { FlatList, SafeAreaView, Text } from "react-native";
+import { FlatList, SafeAreaView} from "react-native";
 import { HealthyRecipesContext, RecipesContext } from "../../../App";
 
 import Card from "../../components/Card";
@@ -49,6 +49,7 @@ const Home = ({ navigation }) => {
 
             <Title style={{color: 'white'}} text="Healthy Recipes" />
 
+            {/* Recipe list by heathy tag  */}
             <FlatList 
                 horizontal
                 data={healthyRecipes} 
@@ -57,29 +58,26 @@ const Home = ({ navigation }) => {
                 showsHorizontalScrollIndicator={false}
                 renderItem={({ item, index }) => (
                     <RecipeCard
-                        style={index === 0 ? { marginLeft: 24 } : {}}
-                        onPress={() => navigation.navigate('RecipeDetails', { item })}
-                        title={item?.name}  
-                        time={item?.cook_time_minutes}
-                        image={item?.thumbnail_url}
-                        rating={item?.user_ratings?.score}
-                        author={item?.credits?.length 
-                            ? { name: item?.credits[0]?.name, image: item?.credits[0]?.image_url } 
-                            : null}
+                    style={index === 0 ? { marginLeft: 24 } : {}}
+                    onPress={() => navigation.navigate('RecipeDetails', { item })}
+                    title={item?.name}  // Recipe Title
+                    time={item?.cook_time_minutes}  //How long time need to cook
+                    image={item?.thumbnail_url} // Recipe Image 
+                    rating={item?.user_ratings?.score} // Recipe Rating
+                    author={item?.credits?.length 
+                        ? { name: item?.credits[0]?.name, image: item?.credits[0]?.image_url } 
+                        : null}
                     />
                 )}
             />
-
-            
+       
             <Categories categories={tags} selectedCategory={selectedTag} onCategoryPress={setSelectedTag} />
-
 
             <Title text= "All Recipes"/>
 
-
+            {/* All recipe */}
             <FlatList
                 horizontal
-                vertical
                 data={filteredRecipes}
                 style={styles.card}
                 keyExtractor={item => String(item?.id)}
